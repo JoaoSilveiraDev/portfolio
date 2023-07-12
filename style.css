@@ -237,3 +237,8 @@ textarea{
         }
     }
 }
+@media(max-width:375px){
+    .apresentacao_direita_titulo{
+        font-size: 22px;
+    }
+}
