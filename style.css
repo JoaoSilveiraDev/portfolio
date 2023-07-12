@@ -220,3 +220,14 @@ textarea{
         }
     }
 }
+@media(max-width:1366px){
+    input{
+        padding: 10px 45px;
+    }
+    textarea{
+        padding: 10px 45px;
+    }
+    #submit{
+        padding: 10px 45px;
+    }
+}
