@@ -144,7 +144,17 @@ textarea{
 .tags{
     display: flex;
 }
-
+@media(max-width:1366px){
+    input{
+        padding: 10px 45px;
+    }
+    textarea{
+        padding: 10px 45px;
+    }
+    #submit{
+        padding: 10px 45px;
+    }
+}
 @media(max-width:414px){
     .cabecalho_esquerda{
         width: 30%;
@@ -218,16 +228,5 @@ textarea{
         100%{
             transform: scale(1.05);
         }
-    }
-}
-@media(max-width:1366px){
-    input{
-        padding: 10px 45px;
-    }
-    textarea{
-        padding: 10px 45px;
-    }
-    #submit{
-        padding: 10px 45px;
     }
 }
