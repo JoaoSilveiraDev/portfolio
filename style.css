@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+.cabecalho{
+   height: 30%;
+   display: flex;
+}
+#j{
+    height: 70px;
+}
+.imagem{
+    height: 300px;
+    width: 500px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.imagem:hover{
+    opacity: 0.4;
+}
+.cabecalho_esquerda{
+    width: 10%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cabecalho_esquerda_imagem{
+    height: 100px;
+    width: 120px;
+}
+.cabecalho_esquerda_subtitulo{
+    color: rgb(114, 114, 114);
+    margin-top: 30px;
+    font-family: 'Marcellus SC', serif;
+    text-align: center;
+}
+.cabecalho_direita{
+    width: 90%;
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    gap: 50px;
+}
+input{
+    padding: 6px 70px;
+    background-color: rgb(41, 41, 41);
+    border: 1px solid  rgb(76, 211, 76);
+    font-family: 'Marcellus SC', serif;
+    text-align: center;
+    border-radius: 10px;
+
+}
+textarea{
+    padding: 6px 70px;
+    background-color: rgb(41, 41, 41);
+    border: 1px solid  rgb(76, 211, 76);
+    font-family: 'Marcellus SC', serif;
+    text-align: center;
+    border-radius: 10px; 
+}
+#submit{
+    padding: 6px 70px;
+    background-color: rgb(41, 41, 41);
+    border: 1px solid  rgb(76, 211, 76);
+    font-family: 'Marcellus SC', serif;
+    text-align: center;
+    border-radius: 10px; 
+    color:black ; 
+    background-color: rgb(76, 211, 76);
+    cursor: pointer;
+    font-size: 20px;
+}
+#submit:hover{
+    opacity: 0.4;
+}
+.cabecalho_direita_link{
+    text-decoration: none;
+    color: rgb(76, 211, 76);
+    font-family: 'Marcellus SC', serif;
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: 1px solid rgb(76, 211, 76);
+}
+.cabecalho_direita_link:hover{
+    opacity: 0.4;
+}
+.apresentacao{
+    height: 70%;
+    display: flex;
+}
+.apresentacao_esquerda{
+    width: 10%;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+}
+.apresentacao_esquerda_link{
+    margin-top: 40px;
+    text-decoration: none;
+    color: rgb(112, 112, 112);
+    font-family: 'Marcellus SC', serif;
+    font-size: 20px;
+}
+.apresentacao_esquerda_link:hover{
+    color: aliceblue;
+}
+.container{
+    display: flex;
+    gap: 40%;
+    justify-content: center;
+}
+.container_imagem{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 30px;
+}
+.apresentacao_direita{
+    width: 90%;
+    background-color: rgb(41, 41, 41);
+}
+.apresentacao_direita_titulo{
+    font-size: 80px;
+    font-family: 'Marcellus SC', serif;
+    margin-left: 60px;
+}
+.apresentacao_direita_tag{
+    font-family: 'Marcellus SC', serif;
+    margin-left: 60px;
+    color: rgb(146, 146, 146); 
+}
+.tags{
+    display: flex;
+}
+
+@media(max-width:414px){
+    .cabecalho_esquerda{
+        width: 30%;
+    }
+    .cabecalho_esquerda_imagem{
+        height: 50px;
+        width: 70px;
+    }
+    .cabecalho_esquerda_subtitulo{
+        font-size: 12px;
+    }
+    .cabecalho_direita{
+        width:70%
+    }
+    .apresentacao_esquerda{
+        width: 30%;
+    }
+    .apresentacao_esquerda_link{
+        font-size: 12px;
+    }
+    .apresentacao_direita{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .apresentacao_direita_tag{
+        margin-left: 30px;
+    }
+    .apresentacao_direita_titulo{
+        font-size: 26px;
+        margin-left: 50px;
+    }
+    #j{
+        height: 30px;
+        width: 40px;
+    }
+    .container_imagem{
+        height: 30px;
+        width: 30px;
+    }
+    .form{
+        flex-direction: column;
+        gap: 2px;
+    }
+    input{
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+    textarea{
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+    #submit{
+        padding: 5px 10px;
+    }
+    .imagem{
+        height: 80px;
+        width: 150px;
+        margin-left: 60px;
+        animation-name: imagem;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes imagem{
+        0%{
+            transform: scale(1);
+        }
+        100%{
+            transform: scale(1.05);
+        }
+    }
+}
